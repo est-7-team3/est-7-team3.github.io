@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>제주데이터허브</title>
+    
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "banner banner"
+                "aside carousel"
+                "aside search"
+                "aside table";
+            grid-template-columns: 1fr 3fr;
+        }
+
+        .banner {
+            grid-area: banner;
+            background-color: lightcoral;
+        }
+
+        .aside {
+            grid-area: aside;
+            background-color: lightblue;
+        }
+
+        .carousel-container {
+            grid-area: carousel;
+            background-color: lightgreen;
+        }
+
+        .search-container {
+            grid-area: search;
+            background-color: lightyellow;
+        }
+
+        .table-container {
+            grid-area: table;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            데이터
+        </div>
+        <aside class="aside">
+            <form>
+                <ul>
+                    <li>
+                        <h1>데이터 카테고리</h1>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <div>전체</div>
+                                </label>
+                                <div>1257</div>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <div>관광, 여행</div>
+                                </label>
+                                <div>434</div>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <div>보건, 복지</div>
+                                </label>
+                                <div>198</div>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <div>교육, 행정</div>    
+                                </label>
+                                <div>135</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h1>데이터 유형</h1>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <div>전체</div>
+                                </label>
+                                <div>1257</div>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <div>API</div>
+                                </label>
+                                <div>90</div>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <div>파일</div>
+                                </label>
+                                <div>669</div>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <div>링크</div>
+                                </label>
+                                <div>520</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>인증 기관</div>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <div>허브인증</div>
+                                </label>
+                                <div>931</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </form>
+        </aside>
+        <div class="carousel-container">
+            <div class="carousel1">
+                <h2>인기 데이터</h2>
+            </div>
+            <div class="carousel2">
+                <h2>최신 데이터</h2>
+            </div>
+        </div>
+        <div class="search-container">
+            <form>
+                <div>검색</div>
+            </form>
+        </div>
+        <div class="table-container">
+            <div>
+                <div>목록 정렬</div>
+                <form>
+                    <select>
+                        <option>최신순</option>
+                        <option>조회순</option>
+                        <option>즐겨찾기순</option>
+                    </select>
+                </form>
+            </div>
+            <div>
+                <form>
+                    <table style="border: 1;">
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>번호</th>
+                                <th>데이터명</th>
+                                <th>수정일</th>
+                                <th>소유자</th>
+                                <th>조회</th>
+                                <th>즐겨찾기</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>1257</td>
+                                <td>1257</td>
+                                <td>1257</td>
+                                <td>1257</td>
+                                <td>1257</td>
+                                <td>1257</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>1257</td>
+                                <td>1257</td>
+                                <td>1257</td>
+                                <td>1257</td>
+                                <td>1257</td>
+                                <td>1257</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>1257</td>
+                                <td>1257</td>
+                                <td>1257</td>
+                                <td>1257</td>
+                                <td>1257</td>
+                                <td>1257</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <div class="pageButtons">
+                    <button>데이터 추가</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
