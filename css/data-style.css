@@ -1,0 +1,144 @@
+
+/* 초기화 시작 */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img, video{
+    max-width: 100%;
+    height: auto;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;  
+}
+
+/* 초기화 종료 */
+
+/* 범용 시작 */
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* 범용 종료 */
+
+/* 위치 분배 */
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "banner banner"
+        "aside carousel"
+        "aside search"
+        "aside table";
+    grid-template-columns: 1fr 3fr;
+}
+
+.banner {
+    grid-area: banner;
+    background-color: lightcoral;
+    background-image: url(	https://www.jejudatahub.net/img/bg-header-desktop.acfbddbb.jpg);
+}
+
+.aside {
+    background-color: lightblue;
+    grid-area: aside;
+}
+
+.carousel-container {
+    grid-area: carousel;
+    background-color: lightgreen;
+}
+
+.search-container {
+    grid-area: search;
+    background-color: lightyellow;
+}
+
+.table-container {
+    grid-area: table;
+    background-color: lightpink;
+}
+
+/* 배너 */
+.h-30{
+    height: 7.5rem;
+}
+
+.banner-title{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: 0.67em;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* 사이드바 */
+.aside{
+    margin-top: 2.5rem;
+}
+
+ul>li>h1{
+    margin-bottom: 1.5rem;
+}
+form>ul>li{
+    padding-top: 1.5rem;
+    margin-top: 2.5rem;
+    border-top: 1px solid #e1e1e1;
+    
+}
+li> ul > li {
+    display: flex;
+    margin-bottom: 1rem;
+}
+ul > li > label {
+    display: flex;
+}
+
+
+
