@@ -69,40 +69,25 @@ p{
 
 /* 위치 분배 */
 
-.container {
-    display: grid;
-    grid-template-areas: 
-        "banner banner"
-        "aside carousel"
-        "aside search"
-        "aside table";
-    grid-template-columns: 1fr 3fr;
-}
-
 .banner {
-    grid-area: banner;
-    background-color: lightcoral;
     background-image: url(	https://www.jejudatahub.net/img/bg-header-desktop.acfbddbb.jpg);
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .aside {
-    background-color: lightblue;
-    grid-area: aside;
+    margin-right: 5rem;
 }
-
+section{
+    display: flex;
+    flex-direction: column;
+}
 .carousel-container {
-    grid-area: carousel;
-    background-color: lightgreen;
-}
-
-.search-container {
-    grid-area: search;
-    background-color: lightyellow;
-}
-
-.table-container {
-    grid-area: table;
-    background-color: lightpink;
+    width: fit-content;
 }
 
 /* 배너 */
@@ -111,9 +96,9 @@ p{
 }
 
 .banner-title{
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    margin-left: 0.67em;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 16.8rem;
     font-size: 28px;
     font-weight: 700;
 }
@@ -135,8 +120,8 @@ form>ul>li{
 }
 li> ul > li {
     display: flex;
-    margin-bottom: 1rem;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
 ul > li > label {
     display: flex;
@@ -154,21 +139,212 @@ li> ul > li > div {
 /* 케러셀 */
 .carousel-container{
     display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
 }
 .carousel > div{
     background-color: white;
+    width: 27.5rem;
 }
-.carousel > h5{
+.carousel > div > h2{
     font-size: 16px;
     font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+.carousel>div>a{
+    display: inline-block
+}
+.carousel > div > a > div{
+    padding : 1.25rem;
+    width: 27.5rem;
+    border-radius: 4px;
+    border: 1px solid #e1e1e1;
+}
+.carousel>div>a>div>div{
+    margin-left: 4.5rem;
+}
+.carousel>div>a>div>div>div{
+    margin-top: 0.5rem;
+    font-size: 12px;
+    color: #999;
+}
+.carousel > div > a > div > span{
+    font-size: 16px;
+    line-height: 3.25rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    font-style: normal;
+    width: 3.25rem;
+    height: 3.25rem;
+    float: left;
+    border-radius: 4px;
+    background-size: 100%;
+    background-color: #224da0;
 }
 
+.carousel>div>ul{
+    display: flex;
+    justify-content: center;
+}
 
 
 
 /* 검색창 */
 .search-container{
     border: 1px solid rgba(34, 77, 160, .1);
-    border-radius: 8px;
-    
+    border-radius: 8px;   
+    background-color: #224da0;
+    background-color: rgba(34, 77, 160, .1);
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.input-div{
+    padding-top: 5rem;
+    width: 25rem;
+    display: flex;
+}
+.input-div>input{
+    border: 1px solid #fff;
+    box-shadow: 5px 15px 20px rgba(34, 77, 160, .12);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 3px;
+}
+.input-div > button{
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    border: 1px solid #224da0;
+    background-color: #224da0;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    margin-left: 0.5rem;
+}
+.search-container>form>div{
+    padding-bottom: 1rem;
+}
+
+.search-container > form>div>div>h1{
+    color: blue;
+    font-size: 13px;
+}
+.search-container > form>div>div>p{
+    font-size: 12px;
+}
+
+/* 테이블 */
+.table-container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.table-container > .table-top{
+    display: flex;
+    justify-content: space-between;
+}
+.table-top{
+    margin-bottom: 0.75rem;
+    font-size: 12px;
+}
+.table>form>table{
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #333;
+    text-align: center;
+    font-size: 14px;
+}
+thead{
+    color: #999;
+    border-bottom: 1px solid #e1e1e1;
+}
+tbody > tr{
+    border-bottom: 1px solid #e1e1e1;
+}
+tbody > tr > td{
+    height: 5rem;
+}
+.cellstar{
+    padding: 16px 0 16px 8px;
+    width: 28px;
+}
+.number{
+    padding: 16px;
+}
+.data-name{
+    text-align: left;
+    padding: 16px;
+}
+.edit-date{
+    padding: 16px;
+}
+.owner{
+    padding: 16px;
+}
+.views{
+    padding: 16px;
+}
+.bookmark{   
+    padding: 16px;
+}
+.addButton{
+    display: flex;
+    justify-content: right;
+    margin-top: 16px;
+}
+.addButton>button{
+    padding: 11px 16px;
+    font-size: 16px;
+    border: 1px solid #224da0;
+    background-color: #224da0;
+    color: #fff;
+    display: inline-block;
+    zoom: 1;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+    word-break: break-all;
+    white-space: nowrap;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.pageButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.page li{
+    margin: 0.25rem;
+    padding: 0.75rem 1rem;
+    border-radius: 25px;
+}
+
+.page a li{
+    border: 1px solid white;
+}
+
+.page a:hover li{
+    border-color: #224da0;
+    color: #224da0;
+}
+.page a.active li{
+    background-color: #224da0;
+    color: white;
+    border-color: #224da0;
+    font-weight: 600;
 }
