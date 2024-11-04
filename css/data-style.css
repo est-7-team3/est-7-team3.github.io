@@ -125,6 +125,7 @@ p{
 
 ul>li>h1{
     margin-bottom: 1.5rem;
+    width: 11.5rem;
 }
 form>ul>li{
     padding-top: 1.5rem;
@@ -135,10 +136,39 @@ form>ul>li{
 li> ul > li {
     display: flex;
     margin-bottom: 1rem;
+    justify-content: space-between;
 }
 ul > li > label {
     display: flex;
 }
+ul > li > label > div{
+    display: flex;
+    padding-left: 1rem;
+    font-size: 14px;
+}
+li> ul > li > div {
+    color: #6EC3EE;
+}
+
+
+/* 케러셀 */
+.carousel-container{
+    display: flex;
+}
+.carousel > div{
+    background-color: white;
+}
+.carousel > h5{
+    font-size: 16px;
+    font-weight: 700;
+}
 
 
 
+
+/* 검색창 */
+.search-container{
+    border: 1px solid rgba(34, 77, 160, .1);
+    border-radius: 8px;
+    
+}
