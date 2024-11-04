@@ -1,0 +1,101 @@
+* {
+    /* border: solid 1px; */
+}
+
+.header{
+    background-color: gray;
+    height: 120px;
+}
+
+.header2{
+    display: flex;
+    height: 120px;
+
+    background-image: url('../assets/bg-header-desktop.acfbddbb.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.footer{
+    background-color: gray;
+    height: 200px;
+}
+
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main{
+    background-color: paleturquoise;
+    min-height: min-content;
+}
+
+.main * {
+    border: solid 1px;
+}
+
+#content-box{
+    width: 57.495rem;
+    height: 58.75rem;
+}
+
+#side-box{
+    padding : 0;
+    width: 11.25rem;
+}
+
+p.caption{
+    margin-bottom: 0.75rem;
+}
+
+.header2-title{
+    font-size: x-large;
+    font-weight: bold;
+    margin: 2.5rem 10.75rem 0.25rem;
+}
+
+#title-box{
+    width: 57.495rem;
+    height: 5.625rem;
+}
+
+#title-box > h1, #title-box>form{
+    
+}
+
+#index-box{
+    width : 22.563rem;
+    height : 2.875rem;
+}
+
+.item {
+    width: 27.483rem;
+    height: 5.625rem;
+}
+
+.item-list{
+    padding: 2.5rem 0;
+}
+
+#side-box > ul > li{
+    padding: 0;
+    width: 11.25rem;
+    height: 4.063rem;
+    text-align: center;
+}
+
+#side-box > ul {
+    padding: 0;
+}
