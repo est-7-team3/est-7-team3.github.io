@@ -1,30 +1,52 @@
-* {
-    /* border: solid 1px; */
-}
-
-.header{
+.header {
     background-color: gray;
-    height: 120px;
+    height: 7.688rem;
 }
 
-.header2{
+.header2 {
     display: flex;
-    height: 120px;
+    height: 7.5rem;
 
     background-image: url('../assets/bg-header-desktop.acfbddbb.jpg');
     background-size: cover;
     background-position: center;
 }
 
-.footer{
+.footer {
     background-color: gray;
-    height: 200px;
+    height: 12.743rem;
 }
 
 .item-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 1.25rem 1.25rem;
+    padding: 0 0;
+
+    border: solid;
+    border-width: 0.125rem 0 0;
+}
+
+.item-list>li {
+    padding: 1.25rem;
+    margin: 0 0;
+    border: solid 0.125rem;
+    border-radius: 0.25rem;
+    border-color: rgb(207, 207, 207);
+
+    box-shadow: 0.125rem 0.125rem 0.125rem gray;
+}
+
+.item-list>li:hover {
+    box-shadow: 0.5rem 0.5rem 0.5rem gray;
+}
+
+.item>a>div>p>* {
+    font-size: 0.75rem;
+}
+
+.item-list>li>a {
+    display: flex;
 }
 
 ul {
@@ -34,50 +56,63 @@ ul {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-.main{
-    background-color: paleturquoise;
+.main {
     min-height: min-content;
 }
 
-.main * {
-    border: solid 1px;
+#main-box {
+    display: flex;
+    justify-content: space-around;
 }
 
-#content-box{
-    width: 57.495rem;
+#content-box {
+    margin: 2.5rem 0;
     height: 58.75rem;
 }
 
-#side-box{
-    padding : 0;
+#side-box {
+    margin: 2.5rem 0;
+    padding: 0;
     width: 11.25rem;
 }
 
-p.caption{
+p.caption {
     margin-bottom: 0.75rem;
 }
 
-.header2-title{
+.header2-title {
     font-size: x-large;
     font-weight: bold;
-    margin: 2.5rem 10.75rem 0.25rem;
+    margin: 2.5rem 22.594rem 0.25rem;
 }
 
-#title-box{
+#title-box {
     width: 57.495rem;
     height: 5.625rem;
 }
 
-#title-box > h1, #title-box>form{
-    
+#title-box>h2 {
+    line-height: 5.625rem;
+    font-weight: bold;
 }
 
-#index-box{
-    width : 22.563rem;
-    height : 2.875rem;
+#title-box>form {
+    display: flex;
+    align-items: center;
+}
+
+form>input {
+    margin: 0 0 0 0.25rem;
+    padding: 0.688rem 0.688rem;
+}
+
+#index-box {
+    margin: 2.5rem 0 0;
+
+    width: 22.563rem;
+    height: 2.875rem;
 }
 
 .item {
@@ -85,17 +120,136 @@ p.caption{
     height: 5.625rem;
 }
 
-.item-list{
-    padding: 2.5rem 0;
+.item>a>div {
+    margin-left: 1.25rem;
 }
 
-#side-box > ul > li{
+#side-box>ul>li {
     padding: 0;
     width: 11.25rem;
     height: 4.063rem;
-    text-align: center;
+    line-height: 4.063rem;
+
+    border: solid;
+    border-width: 0 0 0.125rem;
+    font-weight: bold;
+    font-size: large;
 }
 
-#side-box > ul {
-    padding: 0;
+#side-box>ul>li:first-child {
+    color: #224da0;
+    border-color: #224da0;
+}
+
+#side-box>ul>li:last-child {
+    opacity: 0.5;
+}
+
+#side-box>ul>li:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: black;
+}
+
+#side-box>ul {
+    padding: 0
+}
+
+#item-box>ul {
+    padding: 2.5rem 0;
+}
+
+i {
+    display: inline-block;
+    width: 3.25rem;
+    height: 3.25rem;
+    background-image: url(../assets/icon.png);
+}
+
+form>* {
+    height: 3rem;
+    border-radius: 0.25rem;
+}
+
+form>select {
+    text-align: center;
+    width: 8.438rem;
+    border-radius: 0.25rem;
+}
+
+.submit-btn {
+    width: 3.966rem;
+    background-color: #224da0;
+    color: white;
+    border-radius: 0.25rem;
+}
+
+.submit-btn:hover {
+    opacity: 0.7;
+}
+
+a>div,
+div>p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+p>span:first-child {
+    display: inline-block;
+    width: 4.2rem;
+    height: 0.938rem;
+
+    border: solid rgb(125, 125, 125);
+    border-width: 0 0.1rem 0 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+p>span {
+    border-color: rgb(125, 125, 125);
+    color: rgb(125, 125, 125);
+}
+
+p>span~span {
+    padding: 0 0 0 0.3rem;
+}
+
+.pageButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.page li {
+    margin: 0.25rem;
+    padding: 0.75rem 1rem;
+    border-radius: 25px;
+}
+
+.page a li {
+    border: 1px solid white;
+}
+
+.page a:hover li {
+    border-color: #224da0;
+    color: #224da0;
+}
+
+.page a.active li {
+    background-color: #224da0;
+    color: white;
+    border-color: #224da0;
+    font-weight: 600;
 }
