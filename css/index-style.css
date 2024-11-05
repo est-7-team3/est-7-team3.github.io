@@ -684,7 +684,7 @@ h3 {
 .notice-item-title,
 .report-item-title {
     flex: 1;
-    font-size: 16px; /* 데이터 섹션과 동일한 폰트 크기 */
+    font-size: 16px; /* 데이터 섹션과 동일한 폰트 크기! */
     color: #333;
     margin-right: 16px;
     white-space: nowrap;
