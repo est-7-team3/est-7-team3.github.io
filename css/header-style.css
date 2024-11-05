@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #e1e1e1;
+    height: 7.625rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 73.65rem;
+}
+
+.jejudatahub-container > div {
+    height: fit-content;
+}
+
+.jejudatahub-container > a > div > img {
+    width: 11.25rem;
+    height: 2rem;
+}
+
+.menu-container {
+    font-size: 16px;
+    color: #666;
+}
+
+.menu-container > ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu-container > ul > li {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 5rem;
+    text-align: center;
+    position: relative;
+}
+
+.menu-container > ul > li > a {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.menu-container > ul > li:hover > a {
+    background-color: white;
+    color: #224da0;
+}
+
+.menu-container > ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 10;
+    width: 10rem;
+    text-align: left;
+}
+.menu-container > ul ul > hr{
+    background: #224da0;
+    height: 2px;
+}
+
+.menu-container > ul > li:hover > ul {
+    display: block;
+}
+
+.menu-container > ul ul > li > a {
+    display: block;
+    padding: 1rem;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.menu-container > ul ul > li:hover > a {
+    background-color: white;
+    color: #224da0;
+}
+
+.button-container {
+    display: flex;
+}
+
+.button-container > button {
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    color: #666;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-container > button:hover {
+    border: 1px solid #224da0;
+    color: #224da0;
+}
+
+.button1 {
+    margin-right: 0.5rem;
+}

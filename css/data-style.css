@@ -116,7 +116,9 @@ form>ul>li{
     padding-top: 1.5rem;
     margin-top: 2.5rem;
     border-top: 1px solid #e1e1e1;
-    
+}
+form>ul>li:first-child{
+    border: none;
 }
 li> ul > li {
     display: flex;
@@ -253,6 +255,9 @@ li> ul > li > div {
 .table-top{
     margin-bottom: 0.75rem;
     font-size: 12px;
+}
+.table-top>form>select{
+    border: none;
 }
 .table>form>table{
     width: 100%;
