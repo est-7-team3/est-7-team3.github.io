@@ -3,18 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/faviconV2.png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/data-style.css">
+    <link rel="stylesheet" href="../css/header-style.css">
+    <link rel="stylesheet" href="../css/footer-style.css">
     <title>제주데이터허브</title>
 </head>
 <body>
-    <div class="container">
-        <div class="banner h-30">
-            <div class="banner-title">
-                데이터
+    <header>
+        <nav class="header">
+            <div class="jejudatahub-container">
+                <a href="../index.html">
+                    <div><img src="/assets/jejuDataHup.png"></div>
+                </a>
             </div>
+            <div class="menu-container">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>이용안내</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pages/dataPage.html">
+                            <span>데이터</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pages/infographic.html">
+                            <span>인포그래픽</span>
+                        </a>
+                        <ul>
+                            <hr>
+                            <li><a href="#"><span>차트인포그래픽</span></a></li>
+                            <li><a href="#"><span>영상인포그래픽</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>리포트</span>
+                        </a>
+                        <ul>
+                            <hr>
+                            <li><a href="#"><span>AI리포트</span></a></li>
+                            <li><a href="#"><span>정기리포트</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>제주빅데이터센터</span>
+                        </a>
+                        <ul>
+                            <hr>
+                            <li><a href="#"><span>센터소개</span></a></li>
+                            <li><a href="#"><span>제공데이터</span></a></li>
+                            <li><a href="#"><span>데이터검색</span></a></li>
+                            <li><a href="#"><span>분석실예약</span></a></li>
+                            <li><a href="#"><span>교육장예약</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>정보공개</span>
+                        </a>
+                        <ul>
+                            <hr>
+                            <li><a href="#"><span>공지사항</span></a></li>
+                            <li><a href="#"><span>FAQ</span></a></li>
+                            <li><a href="#"><span>Q&A</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-container">
+                <button class="button1">로그인</button>
+                <button>회원가입</button>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="banner h-30">
+        <div class="banner-title">
+            데이터
         </div>
-        <aside class="aside flex center">
+    </div>
+    <div class="container">
+        <aside class="aside">
             <form>
                 <ul>
                     <li>
@@ -98,114 +173,214 @@
                 </ul>
             </form>
         </aside>
-        <div class="carousel-container">
-            <div class="carousel1">
-                <h2>인기 데이터</h2>
-                <a href="#">
-                    <div>1</div>
-                    <h3>Lorem ipsum dolor sit.</h3>
-                    <div>2024-11-01 | Lorem, ipsum dolor.</div>
-                </a>
-                <ul>
-                    <button>.</button>
-                    <button>.</button>
-                    <button>.</button>
-                </ul>
-            </div>
-            <div class="carousel2">
-                <h2>최신 데이터</h2>
-                <a href="#">
-                    <div>1</div>
-                    <h3>Lorem ipsum dolor sit.</h3>
-                    <div>2024-11-01 | Lorem, ipsum dolor.</div>
-                </a>
-                <ul>
-                    <button>.</button>
-                    <button>.</button>
-                    <button>.</button>
-                </ul>
-            </div>
-        </div>
-        <div class="search-container">
-            <form>
-                <input type="text">
-                <button>검색</button>
-                <p>Lorem, ipsum dolor.</p>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </form>
-        </div>
-        <div class="table-container">
-            <div>
-                <div>목록 정렬</div>
-                <form>
-                    <select>
-                        <option>최신순</option>
-                        <option>조회순</option>
-                        <option>즐겨찾기순</option>
-                    </select>
-                </form>
-            </div>
-            <div>
-                <form>
-                    <table style="border: 1;">
-                        <thead>
-                            <tr>
-                                <th>번호</th>
-                                <th>번호</th>
-                                <th>데이터명</th>
-                                <th>수정일</th>
-                                <th>소유자</th>
-                                <th>조회</th>
-                                <th>즐겨찾기</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>1257</td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                                <td>2024-11-01</td>
-                                <td>제주데이터허브</td>
-                                <td>20</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>1257</td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                                <td>2024-11-01</td>
-                                <td>제주데이터허브</td>
-                                <td>20</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>1257</td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                                <td>2024-11-01</td>
-                                <td>제주데이터허브</td>
-                                <td>20</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td>1257</td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                                <td>2024-11-01</td>
-                                <td>제주데이터허브</td>
-                                <td>20</td>
-                                <td>0</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </form>
-                <div class="pageButtons">
-                    <button>데이터 추가</button>
+        <section>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div>
+                        <h2>인기 데이터</h2>
+                        <a href="#">
+                            <div>
+                                <span>1</span>
+                                <div>
+                                    <h3>Lorem ipsum dolor sit.</h3>
+                                    <div>2024-11-01 | Lorem, ipsum </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><button>.</button></li>
+                            <li><button>.</button></li>
+                            <li><button>.</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="width: 20px;"></div>
+                <div class="carousel">
+                    <div>
+                        <h2>인기 데이터</h2>
+                        <a href="#">
+                            <div>
+                                <span>1</span>
+                                <div>
+                                    <h3>Lorem ipsum dolor sit.</h3>
+                                    <div>2024-11-01 | Lorem, ipsum </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><button>.</button></li>
+                            <li><button>.</button></li>
+                            <li><button>.</button></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <div class="search-container">
+                <form>
+                    <div>
+                        <div class="input-div">
+                            <input type="text" placeholder="키워드를 입력하세요.">
+                            <button>검색</button>
+                        </div>
+                        <br>
+                        <div>
+                            <h1>#Lorem, ipsum dolor.</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="table-container">
+                <div class="table-top">
+                    <div>총 1257개 항목</div>
+                    <form>
+                        <select>
+                            <option>최신순</option>
+                            <option>조회순</option>
+                            <option>즐겨찾기순</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="table">
+                    <form>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="cellstar number"  colspan="2">번호</th>
+                                    <th class="data-name">데이터명</th>
+                                    <th>수정일</th>
+                                    <th>소유자</th>
+                                    <th>조회</th>
+                                    <th>즐겨찾기</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="cellstar"><input type="checkbox"></td>
+                                    <td class="number">1257</td>
+                                    <td class="data-name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                    <td class="edit-date">2024-11-01</td>
+                                    <td class="owner">제주데이터허브</td>
+                                    <td class="views">20</td>
+                                    <td class="bookmark">0</td>
+                                </tr>
+                                <tr>
+                                    <td class="cellstar"><input type="checkbox"></td>
+                                    <td class="number">1257</td>
+                                    <td class="data-name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                    <td class="edit-date">2024-11-01</td>
+                                    <td class="owner">제주데이터허브</td>
+                                    <td class="views">20</td>
+                                    <td class="bookmark">0</td>
+                                </tr>
+                                <tr>
+                                    <td class="cellstar"><input type="checkbox"></td>
+                                    <td class="number">1257</td>
+                                    <td class="data-name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                    <td class="edit-date">2024-11-01</td>
+                                    <td class="owner">제주데이터허브</td>
+                                    <td class="views">20</td>
+                                    <td class="bookmark">0</td>
+                                </tr>
+                                <tr>
+                                    <td class="cellstar"><input type="checkbox"></td>
+                                    <td class="number">1257</td>
+                                    <td class="data-name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                    <td class="edit-date">2024-11-01</td>
+                                    <td class="owner">제주데이터허브</td>
+                                    <td class="views">20</td>
+                                    <td class="bookmark">0</td>
+                                </tr>
+                                <tr>
+                                    <td class="cellstar"><input type="checkbox"></td>
+                                    <td class="number">1257</td>
+                                    <td class="data-name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                    <td class="edit-date">2024-11-01</td>
+                                    <td class="owner">제주데이터허브</td>
+                                    <td class="views">20</td>
+                                    <td class="bookmark">0</td>
+                                </tr>
+                                <tr>
+                                    <td class="cellstar"><input type="checkbox"></td>
+                                    <td class="number">1257</td>
+                                    <td class="data-name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                    <td class="edit-date">2024-11-01</td>
+                                    <td class="owner">제주데이터허브</td>
+                                    <td class="views">20</td>
+                                    <td class="bookmark">0</td>
+                                </tr>
+                                <tr>
+                                    <td class="cellstar"><input type="checkbox"></td>
+                                    <td class="number">1257</td>
+                                    <td class="data-name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                    <td class="edit-date">2024-11-01</td>
+                                    <td class="owner">제주데이터허브</td>
+                                    <td class="views">20</td>
+                                    <td class="bookmark">0</td>
+                                </tr>
+                                <tr>
+                                    <td class="cellstar"><input type="checkbox"></td>
+                                    <td class="number">1257</td>
+                                    <td class="data-name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                    <td class="edit-date">2024-11-01</td>
+                                    <td class="owner">제주데이터허브</td>
+                                    <td class="views">20</td>
+                                    <td class="bookmark">0</td>
+                                </tr>
+                                <tr>
+                                    <td class="cellstar"><input type="checkbox"></td>
+                                    <td class="number">1257</td>
+                                    <td class="data-name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                    <td class="edit-date">2024-11-01</td>
+                                    <td class="owner">제주데이터허브</td>
+                                    <td class="views">20</td>
+                                    <td class="bookmark">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div class="addButton">
+                    <div></div>
+                    <button>데이터 추가</button>
+                </div>
+                <div class="pageButton">
+                    <ul class="page">
+                        <a href="#"> <li><<</li> </a>
+                        <a href="#"> <li><</li> </a>
+                        <a href="#" class="active"> <li>1</li> </a>
+                        <a href="#"> <li>2</li> </a>
+                        <a href="#"> <li>3</li> </a>
+                        <a href="#"> <li>4</li> </a>
+                        <a href="#"> <li>5</li> </a>
+                        <a href="#"> <li>6</li> </a>
+                        <li>...</li>
+                        <a href="#"> <li>126</li> </a>
+                        <a href="#"> <li>></li> </a>
+                        <a href="#"> <li>>></li> </a>
+                    </ul>
+                </div>
+            </div>
+        </section>   
+    </div>
+    <div class="footer">
+        <div>
+            <h1><a href=""><img src="../assets/footer.png"></a></h1>
+            <ul>
+                <li>(63309) 제주특별자치도 제주시 첨단로 241 미래산업센터 |</li>
+                <li>064-720-3743 |</li>
+                <li>jejudatahub@gmail.com</li>
+            </ul>
+            <p>© Jeju Data Hub. 2020</p>
         </div>
-        </div>
+    </div>    
+    
+    
 </body>
 </html>
