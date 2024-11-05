@@ -89,6 +89,11 @@ h2 {
 }
 
 /* 통계 */
+
+.stat-number-link {
+    text-decoration: none; /* 밑줄 제거 */
+}
+
 .stats-container { 
     display: flex;
     gap: 60px;
