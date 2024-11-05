@@ -53,7 +53,7 @@ h2 {
 .main-box-left p {
     font-size: 14px;
     color: #121478;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -93,6 +93,11 @@ h2 {
 .stat-number-link {
     text-decoration: none; /* 밑줄 제거 */
 }
+
+.stat-item:nth-child(1) .stat-label,
+.stat-item:nth-child(2) .stat-label {
+    margin-top: 9px; 
+} /* 데이터, 인포그래픽만 위치 조정해둠*/
 
 .stats-container { 
     display: flex;
@@ -486,13 +491,13 @@ h3 {
 /* Video Section */
 .video-section {
     background-color: #e6e4e4;
-    padding: 20px 0;
+    padding: 20px 10;
 }
 
 .video-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -656,8 +661,9 @@ h3 {
 .notice-item,
 .report-item {
     display: flex;
+    flex-direction: column; /* 세로 정렬 */
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     background-color: #fff;
     padding: 24px; 
     border-radius: 10px; 
@@ -666,30 +672,34 @@ h3 {
     min-height: 100px; 
     transition: transform 0.2s ease;
     cursor: pointer;
+    text-align: left; /* 왼쪽 정렬 추가 */
 }
 
 .notice-item:hover,
 .report-item:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
 }
 
 .notice-item-title,
 .report-item-title {
     flex: 1;
-    font-size: 16px; /* 데이터 섹션과 동일한 폰트 크기 */
+    font-size: 16px; /* 데이터 섹션과 동일한 폰트 크기! */
     color: #333;
     margin-right: 16px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: left; /* 왼쪽 정렬 추가 */
 }
 
 .notice-item-date,
 .report-item-date {
     font-size: 14px; 
     color: #666;
+    align-self: flex-end; /* 날짜를 아래쪽에 배치 */
     white-space: nowrap;
+    align-self: flex-start; /* 왼쪽 정렬 추가 */
 }
 
 .new-badge {
@@ -698,7 +708,7 @@ h3 {
     color: white;
     font-size: 11px;
     padding: 2px 6px;
-    border-radius: 4px;
+    border-radius: 50%;
     margin-left: 8px;
 }
 
